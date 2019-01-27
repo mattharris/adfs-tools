@@ -11,7 +11,8 @@ fd.close()
 
 print "DOS area is {0} bytes.".format(len(dos_data))
 
-fd = open("/dev/mmcblk0", "r+b")
+#fd = open("/dev/mmcblk0", "r+b")
+fd = open("/dev/sdb", "r+b")
 
 fs_map = get_map(fd)
 lfau = (fs_map.disc_record.idlen+1)*fs_map.disc_record.bpmb

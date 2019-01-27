@@ -3,7 +3,8 @@
 from objects import BigDir
 from utils import get_map
 
-fd = open("/dev/mmcblk0", "r+b")
+#fd = open("/dev/mmcblk0", "r+b")
+fd = open("/dev/sdb", "r+b")
 
 fs_map = get_map(fd)
 

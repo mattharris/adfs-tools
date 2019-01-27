@@ -10,7 +10,8 @@ fd.close()
 
 print "Loader is {0} bytes long.".format(loader_len)
 
-fd = open("/dev/mmcblk0", "r+b")
+#fd = open("/dev/mmcblk0", "r+b")
+fd = open("/dev/sdb", "r+b")
 map_address, map_length = find_map(fd)
 fd.seek(map_address)
 fs_map = Map(fd.read(map_length))

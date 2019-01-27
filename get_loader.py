@@ -5,7 +5,8 @@ import struct
 SECSIZE = 512
 
 # fd = open("/home/cmj/ro524.img", "r")
-fd = open("/dev/mmcblk0", "r")
+# fd = open("/dev/mmcblk0", "r")
+fd = open("/dev/sdb", "r")
 
 fd.seek(0, 0)
 
